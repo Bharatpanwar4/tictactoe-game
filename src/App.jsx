@@ -15,8 +15,9 @@ return currentCounter+1;
   return (<div className='app'>
   <div>
   
-  <button onClick={onBtnClick}>click me</button>
-<div>{counter}</div>
+  {/* <button onClick={onBtnClick}>click me</button>
+<div>{counter}</div> */}
+<Board/>
   </div>
   </div>);
 
