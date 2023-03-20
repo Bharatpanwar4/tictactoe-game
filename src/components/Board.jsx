@@ -1,9 +1,7 @@
-
 import Square from './Square';
-const Board = ({squares , handlSquareClick,winnerSquares}) => {
-  
+const Board = ({ squares, handlSquareClick, winnerSquares }) => {
   const renderSquare = position => {
-    const isWinningSquare = winnerSquares.includes(position)
+    const isWinningSquare = winnerSquares.includes(position);
     return (
       <Square
         value={squares[position]}
@@ -15,8 +13,6 @@ const Board = ({squares , handlSquareClick,winnerSquares}) => {
 
   return (
     <div className="board">
-
-
       <div className="board-row">
         {renderSquare(0)}
         {renderSquare(1)}
