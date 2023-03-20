@@ -12,8 +12,7 @@ function App() {
   const gamingBoard = history[currentMove];
 
   const {winner,winnerSquares} = calculateWinner(gamingBoard.squares);
-
-  // console.log({ historyLength:history.length, currentMove });
+  //console.log({ historyLength:history.length, currentMove });
   const handlSquareClick = clickedPosition => {
     if (gamingBoard.squares[clickedPosition] || winner) {
       return;
